@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>MotorvognRegister</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="col-md-4">
+        <h1>Motorvongregister</h1>
+        <form class="from">
+            <div class="form-gruop">
+                <label for="personnr"> Eiers personnr</label>
+                <input type="text" id="personnr" class="form-control">
+            </div>
+            <div class="form-gruop">
+                <label for="eiersNavn"> Eiers Navn</label>
+                <input type="text" id="eiersNavn" class="form-control">
+            </div>
+            <div class="form-gruop">
+                <label for="eiersAdresse"> Eiers Adresse</label>
+                <input type="text" id="eiersAdresse" class="form-control">
+            </div>
+            <div class="form-gruop">
+                <label for="kjennetegn"> Kjennetegn</label>
+                <input type="text" id="kjennetegn" class="form-control">
+            </div>
+            <div class="form-gruop">
+                <label for="bilMerke"> Bil Merke</label>
+                <div id="bilMerke" class="dropdown"></div>
+            </div>
+            <div class="form-gruop">
+                <label for="biltypeList"> Biltype</label>
+                <div id="biltypeList" class="dropdown"></div>
+            </div>
+        </form>
+        <br>
+        <button class="btn btn-success" onclick="regMotorvogn()">Registrer</button>
+    </div>
+    <div class="col-md-8">
+        <h3>Alle Bilene:</h3>
+        <div>
+            <table class="table table-hover" id="resultat"></table>
+        </div>
+        <br>
+        <button class="btn btn-danger" onclick="slettAlle()">Slett Alle</button>
+    </div>
+    <script src="index.js"></script>
+</div>
+</body>
+</html>
